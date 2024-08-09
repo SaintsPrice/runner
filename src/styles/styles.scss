@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "reset.scss";
+@import "fonts";
 
 body {
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
   overflow: hidden;
+
+  font-family: 'Mooli', sans-serif;
 }
