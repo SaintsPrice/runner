@@ -1,0 +1,56 @@
+:host {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+}
+
+.tree {
+  position: relative;
+  bottom: 0;
+  left: 100%;
+  width: 200px;
+  height: 260px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+  @media (max-width: 600px) {
+    width: 60px;
+    height: 95px;
+  }
+
+  @media (max-width: 1000px) and (max-height: 500px) {
+    width: 60px;
+    height: 75px;
+  }
+}
+
+.tree-1 {
+  animation: block 3s linear;
+}
+
+.tree-2 {
+  animation: block 2.8s linear;
+}
+
+.tree-3 {
+  animation: block 2.6s linear;
+}
+
+.tree-4 {
+  animation: block 2.4s linear;
+}
+
+.tree-5 {
+  animation: block 1.8s linear;
+}
+
+@keyframes block {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -20%;
+  }
+}

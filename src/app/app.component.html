@@ -1,1 +1,16 @@
-<app-start-page></app-start-page>
+<div class="app">
+  <router-outlet></router-outlet>
+  @if(modalPwaPlatform === 'ANDROID') {
+  <div class="install">
+    <button class="install-button" (touchstart)="addToHomeScreen()" (click)="addToHomeScreen()">
+      Install {{afterClick}}
+    </button>
+  </div>
+  }
+  @if (!modalPwaPlatform) {
+    <p style="position: absolute; bottom: 20%; z-index: 5;">NOT ANDROID</p>
+  }
+</div>
+@if(router.url != '/' && router.url != '/ending') {
+  <app-audio></app-audio>
+}

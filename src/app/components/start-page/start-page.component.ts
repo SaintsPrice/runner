@@ -1,18 +1,15 @@
-import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-start-page',
   standalone: true,
   imports: [],
   templateUrl: './start-page.component.html',
-  styleUrl: './start-page.component.scss'
+  styleUrl: './start-page.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class StartPageComponent implements AfterViewInit {
-  @ViewChild('gameAudio') protected gameAudioElement!: ElementRef;
-
-  ngAfterViewInit(): void {
-    (this.gameAudioElement.nativeElement as HTMLAudioElement).muted = true;
-    (this.gameAudioElement.nativeElement as HTMLAudioElement).play();
-    (this.gameAudioElement.nativeElement as HTMLAudioElement).muted = false;
+export class StartPageComponent {
+  constructor(protected router: Router) {
   }
 }

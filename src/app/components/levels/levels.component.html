@@ -1,0 +1,8 @@
+<div class="levels-page">
+  <button class="level" (click)="goToLevel(1)">Уровень 1</button>
+  <button class="level" (click)="level > 1 ? goToLevel(2) : ''" [class]="level > 1 ? '' : 'unlocked'">Уровень 2</button>
+  <button class="level" (click)="level > 2 ? goToLevel(3) : ''" [class]="level > 2 ? '' : 'unlocked'">Уровень 3</button>
+  <button class="level" (click)="level > 3 ? goToLevel(4) : ''" [class]="level > 3 ? '' : 'unlocked'">Уровень 4</button>
+  <button class="level" (click)="level > 4 ? goToLevel(5) : ''" [class]="level > 4 ? '' : 'unlocked'">Уровень 5</button>
+  <button class="level" (click)="router.navigateByUrl('main-menu')">←</button>
+</div>

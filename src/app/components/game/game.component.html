@@ -1,0 +1,17 @@
+<div class="game">
+  <div class="game-record">Ваш счет: {{ recordService.record}}</div>
+  <div class="game-entities">
+    <app-hero [level]="level"></app-hero>
+    <app-game-barriers [level]="level" [isLevelFinish]="levelFinish"></app-game-barriers>
+  </div>
+  <div class="ground"></div>
+</div>
+@if(!isAlive) {
+  <app-game-over></app-game-over>
+}
+@if(levelFinish && !gameFinish) {
+  <app-level-complete></app-level-complete>
+}
+@if (gameFinish) {
+  <app-ending></app-ending>
+}

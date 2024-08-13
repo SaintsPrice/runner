@@ -1,0 +1,63 @@
+.hero {
+  position: relative;
+  width: 200px;
+  height: 135px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 2;
+  padding-left: 20px;
+  outline: none;
+
+  @media (max-width: 600px) {
+    width: 80px;
+    height: 55px;
+  }
+
+  @media (max-width: 1000px) and (max-height: 500px) {
+    width: 80px;
+    height: 40px;
+  }
+}
+
+.jump-1 {
+  animation: jump 1.2s linear;
+}
+
+.jump-2 {
+  animation: jump .8s linear;
+}
+
+.jump-3 {
+  animation: jump .7s linear;
+}
+
+.jump-4 {
+  animation: jump .65s linear;
+}
+
+.jump-5 {
+  animation: jump .6s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: -25vh;
+  }
+
+  50% {
+    top: -50vh;
+  }
+
+  75% {
+    top: -25vh;
+  }
+
+  100% {
+    top: 0;
+  }
+}

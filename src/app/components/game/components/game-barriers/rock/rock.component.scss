@@ -1,0 +1,58 @@
+:host {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+}
+
+.rock {
+  position: relative;
+  bottom: -70px;
+  left: 100%;
+  width: 200px;
+  height: 260px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+  @media (max-width: 600px) {
+    width: 60px;
+    height: 80px;
+    bottom: -25px;
+  }
+
+  @media (max-width: 1000px) and (max-height: 500px) {
+    width: 60px;
+    height: 60px;
+    bottom: -25px;
+  }
+  }
+
+.rock-1 {
+  animation: block 3s linear;
+}
+
+.rock-2 {
+  animation: block 2.8s linear;
+}
+
+.rock-3 {
+  animation: block 2.6s linear;
+}
+
+.rock-4 {
+  animation: block 2.4s linear;
+}
+
+.rock-5 {
+  animation: block 1.8s linear;
+}
+
+@keyframes block {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -20%;
+  }
+}

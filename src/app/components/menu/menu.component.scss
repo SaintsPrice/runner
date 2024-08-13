@@ -1,0 +1,77 @@
+.gif-cats {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  .gif-cat {
+    position: absolute;
+    z-index: 1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    width: 35%;
+    height: 25%;
+
+    @media (max-width: 1000px) and (max-height: 500px) {
+      width: 25%;
+      height: 35%;
+    }
+  }
+
+  .gif-cat-one {
+    top: 5%;
+    left: 5%;
+    background-image: url("../../../../assets/start-page/pixel-cat.gif");
+
+    @media (max-width: 1000px) and (max-height: 500px) {
+      top: 2%;
+    }
+  }
+
+  .gif-cat-two {
+    top: 5%;
+    right: 10%;
+    background-image: url("../../../../assets/start-page/pixel-cat-two.gif");
+
+    @media (max-width: 1000px) and (max-height: 500px) {
+      top: 2%;
+    }
+  }
+
+  .gif-cat-three {
+    bottom: 5%;
+    left: 5%;
+    background-image: url("../../../../assets/start-page/pixel-cat-three.gif");
+
+    @media (max-width: 1000px) and (max-height: 500px) {
+      bottom: 2%;
+    }
+  }
+
+  .gif-cat-fourth {
+    bottom: 5%;
+    right: 5%;
+    background-image: url("../../../../assets/start-page/cat-fourth.gif");
+
+    @media (max-width: 1000px) and (max-height: 500px) {
+      bottom: 0%;
+    }
+  }
+
+  .gif-cat-five {
+    top: 5%;
+    left: 25%;
+    background-image: url("../../../../assets/start-page/pixel-cat-five.gif");
+
+    @media (max-width: 1000px) and (max-height: 500px) {
+      top: 0%;
+    }
+  }
+}

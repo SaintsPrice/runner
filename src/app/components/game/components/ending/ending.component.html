@@ -1,0 +1,11 @@
+<div class="ending">
+@if(!isEnding) {
+    <video class="ending-video" src="video/ending-video.mp4" (ended)="handleVideoEnd()" autoplay></video>
+} @else {
+  <div class="end-menu">
+    <h2 class="end-title">Поздравляю вы прошли игру Kotenocka!!!!!</h2>
+    <p class="end-record">Ваш счет составил - {{recordService.record}}</p>
+    <button class="to-menu" (click)="router.navigateByUrl('main-menu')">Выйти в меню</button>
+  </div>
+}
+</div>

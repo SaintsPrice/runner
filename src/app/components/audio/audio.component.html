@@ -1,0 +1,14 @@
+@if (audioService.isFailed$ | async) {
+  <audio src="audio/game-over.mp3" autoplay (ended)="audioService.setFailedDefault()"></audio>
+}
+@if(audioService.isSuccess$ | async) {
+  <audio src="audio/level-complete.mp3" autoplay (ended)="audioService.setSuccessDefault()"></audio>
+}
+@if(audioService.isFiveLevel$ | async) {
+  <audio class="five-level-audio" #fiveLevelAudio [src]="audioFiveLevelSrc" (ended)="nextFiveLeveSong()" autoplay loop></audio>
+} @else {
+  <audio #gameAudio [src]="audioSrc" (ended)="nextSong()" autoplay></audio>
+}
+
+
+

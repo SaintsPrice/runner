@@ -1,0 +1,16 @@
+<div class="barriers">
+  @for (barrier of barriers; track $index) {
+    @switch (barrier) {
+      @case (Barriers.TREE) {
+        <app-tree class="barrier" [level]="level" (barrierOutForGameZone)="handleBarrierOutForGameZone($event)"></app-tree>
+      }
+      @case (Barriers.ROCK) {
+        <app-rock class="barrier" [level]="level" (barrierOutForGameZone)="handleBarrierOutForGameZone($event)"></app-rock>
+      }
+      @case (Barriers.BIRD) {
+        <app-bird class="barrier" [level]="level" (barrierOutForGameZone)="handleBarrierOutForGameZone($event)"></app-bird>
+      }
+  }
+  }
+</div>
+

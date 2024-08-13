@@ -1,0 +1,21 @@
+%button {
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: #ffabb6;
+  color: white;
+  font-size: 60px;
+  width: 600px;
+  height: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover {
+    background-color: rgba(255, 171, 182, 0.9);
+  }
+
+  &:active {
+    background-color: rgba(255, 171, 182, 0.7);
+  }
+}
