@@ -1,0 +1,149 @@
+{
+  "configVersion": 1,
+  "timestamp": 1723566279692,
+  "index": "/runner/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/runner/favicon.png",
+        "/runner/index.html",
+        "/runner/main-PV2HR75A.js",
+        "/runner/manifest.webmanifest",
+        "/runner/polyfills-SCHOHYNV.js",
+        "/runner/styles-TFM7BGJ3.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/runner/catty/1.png",
+        "/runner/catty/10.png",
+        "/runner/catty/11.png",
+        "/runner/catty/12.png",
+        "/runner/catty/2.png",
+        "/runner/catty/3.png",
+        "/runner/catty/4.png",
+        "/runner/catty/5.png",
+        "/runner/catty/6.png",
+        "/runner/catty/7.png",
+        "/runner/catty/8.png",
+        "/runner/catty/9.png",
+        "/runner/fonts/Mooli-Regular.ttf",
+        "/runner/game/bird/1.png",
+        "/runner/game/bird/2.png",
+        "/runner/game/bird/3.png",
+        "/runner/game/bird/4.png",
+        "/runner/game/bird/5.png",
+        "/runner/game/ground.png",
+        "/runner/game/rock.png",
+        "/runner/game/tree.png",
+        "/runner/icons/icon-128x128.png",
+        "/runner/icons/icon-144x144.png",
+        "/runner/icons/icon-152x152.png",
+        "/runner/icons/icon-192x192.png",
+        "/runner/icons/icon-384x384.png",
+        "/runner/icons/icon-512x512.png",
+        "/runner/icons/icon-72x72.png",
+        "/runner/icons/icon-96x96.png",
+        "/runner/media/Mooli-Regular-5ZGT7SLT.ttf",
+        "/runner/media/cat-fourth-OCUFVHRK.gif",
+        "/runner/media/ground-QRRREOQV.png",
+        "/runner/media/pixel-cat-FE5J4BGX.gif",
+        "/runner/media/pixel-cat-five-L6X4DTMG.gif",
+        "/runner/media/pixel-cat-three-M3QHAR6P.gif",
+        "/runner/media/pixel-cat-two-NBYLFG2O.gif",
+        "/runner/media/start-page-background-GVQHPB7T.jpg",
+        "/runner/start-page/cat-fourth.gif",
+        "/runner/start-page/pixel-cat-five.gif",
+        "/runner/start-page/pixel-cat-three.gif",
+        "/runner/start-page/pixel-cat-two.gif",
+        "/runner/start-page/pixel-cat.gif",
+        "/runner/start-page/start-page-background.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/runner/catty/1.png": "579a3a1ad58c4c7e7c00df2fe5a554535d33504d",
+    "/runner/catty/10.png": "a8b0b0940c4a9a01fce128ba838e6a8efdf65517",
+    "/runner/catty/11.png": "852fdc7df7b950e7e0371982fd382c69c2ebf063",
+    "/runner/catty/12.png": "15d441293aa9812c8afbd244d5ca8bf4595489d9",
+    "/runner/catty/2.png": "c193da6274ebc6f0645932261cba500f97373790",
+    "/runner/catty/3.png": "a886ae610384c002d2b66da8fd33181f9d76a7a5",
+    "/runner/catty/4.png": "6e57be087a1ac1b42d3b97a34daf7345b24a4198",
+    "/runner/catty/5.png": "7e9bc1af0b9f10e158debcf6c3707f9ec402142c",
+    "/runner/catty/6.png": "a3293b3b590e4bff4a3c082fd5886c1c6bd70ab2",
+    "/runner/catty/7.png": "cfe7c5db816106e1de56d8bf5c6c9393e06d4b5e",
+    "/runner/catty/8.png": "b23b4e713ea4516fbbb191975c7b378a1975a7d7",
+    "/runner/catty/9.png": "5b88c29791bca2742d81db8a31d0e8cad8c1cbab",
+    "/runner/favicon.png": "1668c27999b4096ab9796bbe9571d479a8d5d63a",
+    "/runner/fonts/Mooli-Regular.ttf": "d9697af4351e41fdf1e25c9f4bb22592b0001c65",
+    "/runner/game/bird/1.png": "e8a8b363d4da6166e50abfcd332b0abf4277918d",
+    "/runner/game/bird/2.png": "1d778330c04d00ab72a0f46f1bdfe3b414e65c6d",
+    "/runner/game/bird/3.png": "da88d813b7ae79bee0e9e6c6670ee55f0f548b5d",
+    "/runner/game/bird/4.png": "0b055f009e9a2024ad3e6de2e6876336521e9a18",
+    "/runner/game/bird/5.png": "06a9b815ca64d3266ce861161dcfa0c54df2e261",
+    "/runner/game/ground.png": "92d364794f9f9a0a7c74caa23cafd592dfa636a0",
+    "/runner/game/rock.png": "d9b4bd5b623026c79f0b13e76e77796c39ee6762",
+    "/runner/game/tree.png": "452158f42c1c0311fa9255f9e0b82ae4d7999b5c",
+    "/runner/icons/icon-128x128.png": "942518ea17efc237a353e625147d29c558b5f15c",
+    "/runner/icons/icon-144x144.png": "6f4f16010401bae2e8301b7e9bef58d0eecb1f6d",
+    "/runner/icons/icon-152x152.png": "02d86d396514dd652ea226efa04284b9356c2cec",
+    "/runner/icons/icon-192x192.png": "49f601fe3e948a382e572704c70c0fcfecbd8782",
+    "/runner/icons/icon-384x384.png": "daab357768f41a3b5f8b9b5c6eff094fc195d048",
+    "/runner/icons/icon-512x512.png": "83a9c04b7817a031ee1e6d124a0e2f4e877dceb4",
+    "/runner/icons/icon-72x72.png": "f8c21b97310f459ba7d2da0dde7e359652d5d4b9",
+    "/runner/icons/icon-96x96.png": "56a6bb2495e314d16b29d255feb16b217ace257d",
+    "/runner/index.html": "dbaa91c6f3e3b062a581ebcaa2d598246d53397f",
+    "/runner/main-PV2HR75A.js": "073ce1a42b9e1ac15204840a8ab18bb79a3a0043",
+    "/runner/manifest.webmanifest": "91ba3d8f5fc7585f3897331617c7b32cda485241",
+    "/runner/media/Mooli-Regular-5ZGT7SLT.ttf": "d9697af4351e41fdf1e25c9f4bb22592b0001c65",
+    "/runner/media/cat-fourth-OCUFVHRK.gif": "b0324a81425a756b597e8ded15a65d90784cd203",
+    "/runner/media/ground-QRRREOQV.png": "92d364794f9f9a0a7c74caa23cafd592dfa636a0",
+    "/runner/media/pixel-cat-FE5J4BGX.gif": "abbf3326d39bbd328260fba838ce38a858122c40",
+    "/runner/media/pixel-cat-five-L6X4DTMG.gif": "b96de2d2ade234fe7f5ed780777b94747bbe3b19",
+    "/runner/media/pixel-cat-three-M3QHAR6P.gif": "38600b60a6bdd0097eac27c5e4748cc99e588340",
+    "/runner/media/pixel-cat-two-NBYLFG2O.gif": "5c43a89054682ba87fdbef1cd99c0111e1d37199",
+    "/runner/media/start-page-background-GVQHPB7T.jpg": "41471d61728a30893834b043defa691373d8f7c3",
+    "/runner/polyfills-SCHOHYNV.js": "d45c76c5960bab3ace7fd6d211b9579456241f8a",
+    "/runner/start-page/cat-fourth.gif": "b0324a81425a756b597e8ded15a65d90784cd203",
+    "/runner/start-page/pixel-cat-five.gif": "b96de2d2ade234fe7f5ed780777b94747bbe3b19",
+    "/runner/start-page/pixel-cat-three.gif": "38600b60a6bdd0097eac27c5e4748cc99e588340",
+    "/runner/start-page/pixel-cat-two.gif": "5c43a89054682ba87fdbef1cd99c0111e1d37199",
+    "/runner/start-page/pixel-cat.gif": "abbf3326d39bbd328260fba838ce38a858122c40",
+    "/runner/start-page/start-page-background.jpg": "41471d61728a30893834b043defa691373d8f7c3",
+    "/runner/styles-TFM7BGJ3.css": "ab98413405f59270845684dc7ceccf33cbfed126"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
