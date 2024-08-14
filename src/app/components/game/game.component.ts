@@ -18,11 +18,11 @@ export const recordTime: Record<GameLevels, number> = {
 }
 
 export const levelTime: Record<GameLevels, number> = {
-  [GameLevels.FIRST_LEVEL]: 10000,
-  [GameLevels.SECOND_LEVEL]: 10000,
-  [GameLevels.THIRD_LEVEL]: 10000,
-  [GameLevels.FOURTH_LEVEL]: 10000,
-  [GameLevels.FIFTH_LEVEL]: 10000
+  [GameLevels.FIRST_LEVEL]: 1000 * 60 * 2,
+  [GameLevels.SECOND_LEVEL]: 1000 * 60 * 2,
+  [GameLevels.THIRD_LEVEL]: 1000 * 60 * 2,
+  [GameLevels.FOURTH_LEVEL]: 1000 * 60 * 2,
+  [GameLevels.FIFTH_LEVEL]: 1000 * 60 * 4
 }
 // 1000 * 60 * 2
 // 1000 * 60 * 4
