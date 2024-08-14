@@ -11,6 +11,7 @@ import {
 import {NgClass, NgStyle} from "@angular/common";
 import {GameLevels} from "../../models/game-levels.enum";
 import {fromEvent, Observable} from "rxjs";
+import {Platform} from "@angular/cdk/platform";
 
 export const jumpTime: Record<GameLevels, number> = {
   [GameLevels.FIRST_LEVEL]: 1200,
@@ -44,6 +45,7 @@ export class HeroComponent implements OnChanges, OnInit, AfterViewInit {
   @Input() isLevelFinish: boolean = false;
 
   protected clickEvent: Observable<Event> = fromEvent<Event>(document, 'click');
+  protected touchEvent: Observable<Event> = fromEvent<Event>(document, 'touchstart');
   protected spaceEvent: Observable<KeyboardEvent> = fromEvent<KeyboardEvent>(document, 'keydown');
 
   private heroImgIndex = 1;
@@ -56,21 +58,27 @@ export class HeroComponent implements OnChanges, OnInit, AfterViewInit {
 
   private animateHeroInterval: any
 
-  constructor(private changeDetection: ChangeDetectorRef) {
-    this.clickEvent.subscribe(() => {
-      this.jump();
-    });
-    this.spaceEvent.subscribe(($event: KeyboardEvent) => {
-      if($event.code === 'Space') {
+  constructor(private changeDetection: ChangeDetectorRef, private platform: Platform) {
+    if (this.platform.IOS) {
+      this.touchEvent.subscribe(() => {
         this.jump();
-      }
-    })
+      })
+    } else {
+      this.clickEvent.subscribe(() => {
+        this.jump();
+      });
+      this.spaceEvent.subscribe(($event: KeyboardEvent) => {
+        if ($event.code === 'Space') {
+          this.jump();
+        }
+      });
+    }
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-        if('isLevelFinish' in changes) {
-        }
+    if ('isLevelFinish' in changes) {
     }
+  }
 
   ngOnInit(): void {
     this.calculateJumpTimeByLevel();
@@ -82,7 +90,7 @@ export class HeroComponent implements OnChanges, OnInit, AfterViewInit {
   }
 
   protected jump() {
-    if(this.isJumping) return;
+    if (this.isJumping) return;
     this.isJumping = true;
     setTimeout(() => {
       this.isJumping = false;
