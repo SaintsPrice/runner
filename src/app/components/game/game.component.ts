@@ -18,13 +18,14 @@ export const recordTime: Record<GameLevels, number> = {
 }
 
 export const levelTime: Record<GameLevels, number> = {
-  [GameLevels.FIRST_LEVEL]: 1000 * 60 * 2,
-  [GameLevels.SECOND_LEVEL]: 1000 * 60 * 2,
-  [GameLevels.THIRD_LEVEL]: 1000 * 60 * 2,
-  [GameLevels.FOURTH_LEVEL]: 1000 * 60 * 2,
-  [GameLevels.FIFTH_LEVEL]: 1000 * 60 * 4
+  [GameLevels.FIRST_LEVEL]: 10000,
+  [GameLevels.SECOND_LEVEL]: 10000,
+  [GameLevels.THIRD_LEVEL]: 10000,
+  [GameLevels.FOURTH_LEVEL]: 10000,
+  [GameLevels.FIFTH_LEVEL]: 10000
 }
-
+// 1000 * 60 * 2
+// 1000 * 60 * 4
 @Component({
   selector: 'app-game',
   standalone: true,
@@ -115,7 +116,7 @@ export class GameComponent implements AfterViewInit, OnDestroy{
       }
       this.levelFinish = true;
       this.audioService.setSuccess();
-      if(parseInt(localStorage.getItem('level') ?? '0') < this.level) {
+      if(parseInt(localStorage.getItem('level') ?? '0') < this.level + 1) {
         localStorage.setItem('level', (this.level + 1).toString());
       }
       clearInterval(this.checkIsAliveInterval);
